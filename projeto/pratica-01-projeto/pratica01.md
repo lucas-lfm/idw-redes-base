@@ -300,7 +300,7 @@
       const Footer = () => {
         return (
           <footer>
-            <p>Site desenvolvdo na disciplina de Desenvolvimento Web I do curso Técnico em Informática para Internet do IFCE - Campus Tauá</p>
+            <p>Site desenvolvdo na disciplina de Introdução ao Desenvolvimento Web do curso Técnico Integrado em Redes de Computadores do IFCE - Campus Tauá</p>
             <p>CineLib @ 2024 - Exclusivamente para fins educacionais</p>
           </footer>
         );
