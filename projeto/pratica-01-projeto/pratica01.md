@@ -364,7 +364,7 @@
 
 1. Crie os arquivos correspondentes ao componente Card dentro da pasta `components` (`Card.jsx` e `Card.css`)
 
-1. Faça a imortação do arquivo de estilos `Card.css` dentro do arquivo `Card.jsx`
+1. Faça a importação do arquivo de estilos `Card.css` dentro do arquivo `Card.jsx`
 
 1. Defina o component `Card` com uma *arrow function*, como feito para os componentes anteriores, e exporte o componente ao final
 
@@ -583,7 +583,24 @@
 1. Por fim, vamos usar o hook `useEffect` para possibilitar sincronizar nossa aplicação com a API do TMDB, executando a função `fetch` (de envio da requisição) sempre que o componente for re-renderizado. A sintaxe é apresentada a seguir e o código deve ser colocado abaixo da definição do estado (feito no passo anterior) e antes do `return` do componente. Veja como deve ficar o código final do arquivo `App.jsx`:
 
     ```jsx
-    ...
+    import { useState, useEffect } from 'react';
+
+    import './App.css';
+
+    import NavBar from './components/NavBar';
+    import Footer from './components/Footer';
+    import Card from './components/Card';
+
+    const options = {
+      method: 'GET',
+      headers: {
+          accept: 'application/json',
+          Authorization: 'Bearer SEU_TOKEN'
+      }
+    };
+
+    const URL_FETCH = "https://api.themoviedb.org/3/discover/movie?include_adult=false&include_video=false&language=pt-BR&page=1&sort_by=popularity.desc";
+
     const App = () => {
 
       const [filmes, setFilmes] = useState([]);
@@ -631,7 +648,6 @@
     export default App;
     ```
 
-    - O código acima da linha `const App = () => {` foi omitido (não mudou)
     - Explicando o código dentro do `useEffect()`:
         - O `useEffect()` recebe dois parâmetros: uma função que será executada e um array de dependências que especifica algum elemento que será verificado para saber se a função dentro do `useEffect` deve ou não ser executada.
         - Basicamente, criamos uma função assíncrona chamada `buscarFilmes()` que envia uma requisição à API do TMDB (da forma como já fizemos em práticas passadas)
