@@ -100,7 +100,7 @@ export const useFetch = (url) => {
 1. Ainda no arquivo `App.jsx`, vamos importar o nosso hook `useFetch` para buscar os filmes na API.
     - Inclua a seguinte linha de importação no início do arquivo `App.jsx`:
     ```javascript
-    import { useFetch } from "../../hooks/useFetch";
+    import { useFetch } from "./hooks/useFetch";
     ```
 
     - Imediatamente após a linha `const App = () => {`, ou seja, no início do componente App, inclua a seguinte linha de código:
