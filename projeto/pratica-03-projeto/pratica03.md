@@ -3,7 +3,7 @@
 ## Roteiro de Prática
 
 > **_Prática 03 - Projeto Final_**
-> - Nessa prática, vamos implementar a funcionalidade de busca por filmes, utilizando o componente de bucsa na barra de navegação superior.
+> - Nessa prática, vamos implementar a funcionalidade de busca por filmes, utilizando o componente de busca na barra de navegação superior.
 > - Vamos precisar criar uma nova página em nossa aplicação para exibir os resultados de busca.
 > - Para isso, vocês vão aprender a trabalhar com rotas, utilizando a biblioteca `react-router-dom` para fazer o roteamento de páginas em nossa aplicação.
 
