@@ -7,6 +7,13 @@
 > - Vamos precisar criar uma nova página em nossa aplicação para exibir os resultados de busca.
 > - Para isso, vocês vão aprender a trabalhar com rotas, utilizando a biblioteca `react-router-dom` para fazer o roteamento de páginas em nossa aplicação.
 
+> **Dicas e Instruções:**
+> - **Compreenda o fluxo:** Leia todo o roteiro antes de começar (ou, pelo menos, leia cada etapa, por inteiro, antes de começar) para entender o objetivo final. Isso ajuda a evitar surpresas ao longo do caminho.
+> - **Mantenha o editor organizado**: após finalizar a edição em um arquivo, feche ele no editor para não se confundir com tantos arquivos abertos.
+
+> **Estimativa de Tempo:**
+> - ***Tempo Total Estimado:*** 1h30min - 2h
+
 ### 01 - Instalando a biblioteca React Router Dom
 
 > ✅ O **React Router Dom** é uma biblioteca para uso no React, onde é possível realizar o gerenciamento de rotas entre as páginas de um site, 
@@ -43,7 +50,7 @@
     - Essa não é uma boa prática quando temos múltiplas páginas em nossa aplicação.
     - Precisamos então remover a lógica e a definição dos componentes da página inicial do arquivo `App.jsx` para o arquivo `Home.jsx`. Confira a seguir, como você pode fazer isso.
 
-2. Inicialmente crie o código base do componente `Home.jsx`, que será nossa página inicial. Veja o código inicial que você deve criar no arquivo `Home.jsx`:
+1. Inicialmente crie o código base do componente `Home.jsx`, que será nossa página inicial. Veja o código inicial que você deve criar no arquivo `Home.jsx`:
 
     ```javascript
     const Home = () => {
@@ -57,7 +64,7 @@
 
     - O elemento de título `<h2>Página Home</h2>` é somente demonstrativo, já vamos substituir pelos elementos da página inicial.
 
-3. Agora, precisamos pegar tudo que for lógica ou definição de elementos da página inicial do arquivo `App.jsx` e colocar em `Home.jsx`.
+1. Agora, precisamos pegar tudo que for lógica ou definição de elementos da página inicial do arquivo `App.jsx` e colocar em `Home.jsx`.
     - O arquivo `Home.jsx` ficará com o seguinte código:
 
     ```javascript
@@ -90,7 +97,7 @@
     - Perceba também que importamos o arquivo `Home.css`, para aplicar qualquer CSS específico da página inicial.
         - Não teremos nenhum CSS específico para essa página, pois os estilos já estão definidos de forma global. Ou seja, o arquivo `Home.css` ficará vazio mesmo, mas vamso deixar assim mesmo, pois já temos a estrutura pronta para aplicar algum estilo específico futuramente.
 
-4. O arquivo `App.jsx` ficará com o seguinte código após retirar a lógica e a definição dos elementos da página inicial:
+1. O arquivo `App.jsx` ficará com o seguinte código após retirar a lógica e a definição dos elementos da página inicial:
 
     ```javascript
     import './App.css';
