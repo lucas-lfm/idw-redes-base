@@ -1,0 +1,28 @@
+:root {
+  --bg-color: #242424;
+  --text-color: #fcfcfc;
+  --primary-color: #2C8C99;
+  --hover-color: #326771;
+  --star-color: #f7d354;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--hover-color);
+}

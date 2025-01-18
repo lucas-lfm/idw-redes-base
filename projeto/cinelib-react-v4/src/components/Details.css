@@ -1,0 +1,53 @@
+.details {
+    padding: 1rem;
+    width: 70%;
+    min-width: 720px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    column-gap: 2%;
+    row-gap: 2rem;
+    margin: 0 auto;
+}
+
+.basic-info {
+    flex: 1 1 28%;
+}
+
+.basic-info .img-poster {
+    width: 200px;
+    border-radius: 4px;
+}
+
+.basic-info h3 {
+    font-size: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.basic-info p {
+    font-size: 0.8rem;
+}
+
+.basic-info ul {
+    list-style-type: none;
+    margin-bottom: 1rem;
+    font-size: 0.8rem;
+    font-style: italic;
+    opacity: 0.5;
+}
+
+.more-info {
+    flex: 1 1 70%;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+.more-info h3 {
+    margin-bottom: 1rem;
+}
+
+.more-info iframe {
+    width: 100%;
+    margin-bottom: 1.5rem;
+}
