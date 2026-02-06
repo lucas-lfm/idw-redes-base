@@ -55,4 +55,4 @@
 
     - https://developer.mozilla.org/pt-BR/
 
-- Esta atividade não possui código base, você deve **começar do zero**. Use o [CodePen](https://codepen.io/), salvando a resposta em sua conta e enviando o link pelo Classroom, como feito na atividade passada.
+- Esta atividade não possui código base, você deve **começar do zero**. Use o [CodePen](https://codepen.io/), salvando a resposta em sua conta e enviando o link pelo Classroom.
